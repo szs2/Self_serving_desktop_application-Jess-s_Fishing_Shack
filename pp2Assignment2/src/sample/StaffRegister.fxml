@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="568.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StaffRegister">
+   <children>
+      <Text fx:id="sReg" layoutX="317.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Registration" />
+      <Text fx:id="txtSRegID" layoutX="95.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff ID" />
+      <Text fx:id="txtSRegPass" layoutX="95.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Password" />
+      <Text fx:id="txtSRegName" layoutX="106.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Name" />
+      <Button fx:id="btnSRegSubmit" layoutX="477.0" layoutY="404.0" mnemonicParsing="false" onAction="#sRegSubmit" text="Submit" />
+      <TextField fx:id="sRegEmail" layoutX="217.0" layoutY="283.0" />
+      <TextField fx:id="sRegID" layoutX="217.0" layoutY="146.0" />
+      <TextField fx:id="sRegPass" layoutX="217.0" layoutY="196.0" />
+      <Text layoutX="65.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Email Address" />
+      <TextField fx:id="sRegName" layoutX="217.0" layoutY="242.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="432.0" prefWidth="573.0">
+         <children>
+            <Button fx:id="btnCustomer" layoutX="166.0" layoutY="51.0" mnemonicParsing="false" onAction="#Customer" text="Customer">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font></Button>
+            <Button fx:id="btnStaff" layoutX="206.0" layoutY="170.0" mnemonicParsing="false" onAction="#Staff" text="Staff">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font></Button>
+            <Button fx:id="btnOwner" layoutX="194.0" layoutY="287.0" mnemonicParsing="false" onAction="#Owner" text="owner">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

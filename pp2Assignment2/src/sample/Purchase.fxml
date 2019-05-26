@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="985.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Purchase">
+  <children>
+    <AnchorPane prefHeight="348.0" prefWidth="338.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <children>
+        <Label layoutX="10.0" layoutY="131.0" prefHeight="31.0" prefWidth="96.0" text="Product Size" />
+        <TextField fx:id="txtfProName" layoutX="122.0" layoutY="81.0" />
+        <Label layoutX="10.0" layoutY="81.0" prefHeight="31.0" prefWidth="96.0" text="Product Name" />
+        <Text layoutX="12.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+        <TextField fx:id="txtfQuantity" layoutX="122.0" layoutY="220.0" prefHeight="31.0" prefWidth="187.0" />
+        <Button fx:id="btnAddCart" layoutX="261.0" layoutY="315.0" mnemonicParsing="false" onAction="#add" text="Add" />
+        <Text layoutX="22.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID" />
+        <TextField fx:id="txtfProID" layoutX="122.0" layoutY="39.0" />
+        <Text layoutX="12.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price" />
+        <TextField fx:id="txtfTotPrice" layoutX="122.0" layoutY="259.0" />
+        <TextField fx:id="txtfProSize" layoutX="122.0" layoutY="131.0" />
+        <TextField fx:id="txtfProPrice" layoutX="122.0" layoutY="175.0" />
+        <Text layoutX="14.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Price" />
+        <Button layoutX="40.0" layoutY="316.0" mnemonicParsing="false" onAction="#buy" text="Buy" />
+            <Label fx:id="error" layoutX="102.0" layoutY="321.0" prefHeight="21.0" prefWidth="146.0" />
+      </children>
+    </AnchorPane>
+    <TableView fx:id="table" prefHeight="383.0" prefWidth="608.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+      <columns>
+        <TableColumn fx:id="product_ID" prefWidth="91.0" text="Product_ID" />
+        <TableColumn fx:id="product_Name" prefWidth="138.0" text="Product_Name" />
+        <TableColumn fx:id="product_Size" prefWidth="131.0" text="Product_size" />
+        <TableColumn fx:id="available_Quantity" prefWidth="164.0" text="Available_Quantity" />
+        <TableColumn fx:id="product_Price" prefWidth="118.0" text="Product_Price" />
+      </columns>
+    </TableView>
+    <TableView prefHeight="297.0" prefWidth="616.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+      <columns>
+        <TableColumn prefWidth="75.0" text="C1" />
+        <TableColumn prefWidth="75.0" text="C2" />
+      </columns>
+    </TableView>
+    <AnchorPane prefHeight="97.0" prefWidth="342.0" GridPane.columnIndex="1">
+      <children>
+        <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" />
+        <TextField fx:id="txtpUserName" layoutX="105.0" layoutY="18.0" prefHeight="31.0" prefWidth="216.0" />
+      </children>
+    </AnchorPane>
+    <AnchorPane prefHeight="102.0" prefWidth="634.0" GridPane.columnIndex="2" />
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+  </children>
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="633.0" minWidth="10.0" prefWidth="341.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="643.0" minWidth="10.0" prefWidth="643.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="383.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="435.0" minHeight="10.0" prefHeight="381.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="381.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="424.0" minHeight="10.0" prefHeight="311.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>
